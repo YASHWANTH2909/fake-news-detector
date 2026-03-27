@@ -17,9 +17,9 @@ st.markdown("Enter a news article below to check if it's **Real** or **Fake** us
 @st.cache_data
 def load_data():
     # Replace these with your actual Google Drive file IDs
-   fake_url = "https://drive.google.com/uc?export=download&id=1T0d9efYzYO43nSAHaDHMDYHzBp34YoFi"
-   true_url = "https://drive.google.com/uc?export=download&id=19OkA9oLSAdxYhiMKHTXzmA70PsauZVLX"
-
+    fake_url = "https://drive.google.com/uc?export=download&id=1T0d9efYzYO43nSAHaDHMDYHzBp34YoFi"
+    true_url = "https://drive.google.com/uc?export=download&id=19OkA9oLSAdxYhiMKHTXzmA70PsauZVLX"
+    
     df_fake = pd.read_csv(fake_url)
     df_true = pd.read_csv(true_url)
 
